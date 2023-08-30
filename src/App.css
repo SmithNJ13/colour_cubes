@@ -1,0 +1,20 @@
+:root {
+  background-color: grey;
+}
+.timer {
+  font-size: 3rem;
+  position: relative;
+  text-align: center;
+  margin-top: 10vh;
+}
+.grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 10rem);
+  grid-template-rows: repeat(3, 10rem);
+  margin-top: 1rem;
+}
+.box {
+  background-color: ivory;
+  border: solid black 1.5px;
+}
