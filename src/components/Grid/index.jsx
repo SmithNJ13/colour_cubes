@@ -22,6 +22,7 @@ const Grid = () => {
     setCurrentColours(prevColours => {
       const updatedColours = [...prevColours];
       updatedColours[index] = newColour;
+      console.log(updatedColours)
       return updatedColours;
     });
   }
@@ -33,7 +34,7 @@ const Grid = () => {
         {currentColours.map((color, index) => (
           <div
             key={index}
-            className="w-40 h-40 border border-black hover:cursor-pointer transition-colors duration-100"
+            className="sm:w-[14rem] sm:h-[14rem] w-[7rem] h-[7rem] border border-neutral-500 border-[1px] hover:cursor-pointer transition-colors duration-100"
             style={{ backgroundColor: color }}
             onMouseEnter={() => randomColour(index, 5)}
           ></div>
