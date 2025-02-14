@@ -34,7 +34,7 @@ const Timer = () => {
   
     return (
       <>
-        <div className="timer">Time: {time}</div>
+        <div className="text-4xl text-white font-bold m-[1rem]">Time: {time}</div>
       </>
     )
 }
